@@ -4,4 +4,5 @@ sudo docker run \
     -e PORT=2732 \
     -v $(pwd)/app.py:/app/app.py \
     -v $(pwd)/token.txt:/app/token.txt \
+    -d \
     -t telegram_proxy
