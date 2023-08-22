@@ -4,7 +4,7 @@ FROM python:slim
 WORKDIR /app
 
 # apt-get Update and upgrade
-RUN apt-get update && apt-get upgrade -y
+# RUN apt-get update && apt-get upgrade -y
 
 RUN pip install --upgrade pip
 

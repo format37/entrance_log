@@ -1,5 +1,6 @@
 import logging
 from flask import Flask, request, jsonify
+import flask
 import requests
 import os
 
@@ -7,6 +8,11 @@ import os
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
+
+# Log flask version
+logger.info(f"Flask version: {flask.__version__}")
+# Log requests version
+logger.info(f"Requests version: {requests.__version__}")
 
 app = Flask(__name__)
 
