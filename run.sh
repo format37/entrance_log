@@ -5,5 +5,6 @@ sudo docker run \
     -v $(pwd)/token.txt:/app/token.txt \
     -d \
     -t \
+    --name telegram_proxy \
     --restart on-failure \
     telegram_proxy
