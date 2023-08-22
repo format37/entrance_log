@@ -12,7 +12,7 @@ WORKDIR /app
 COPY requirements.txt .
 
 # Install any needed packages specified in requirements.txt
-RUN pip install -r requirements.txt
+RUN python3 -m pip install -r requirements.txt
 
 # Run app.py when the container launches
 CMD ["python", "app.py"]
