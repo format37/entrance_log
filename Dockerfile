@@ -6,7 +6,7 @@ WORKDIR /app
 # apt-get Update and upgrade
 # RUN apt-get update && apt-get upgrade -y
 
-RUN pip install --upgrade pip
+# RUN pip install --upgrade pip
 
 # Copy requirements.txt to the working directory
 COPY requirements.txt .
