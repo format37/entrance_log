@@ -1,1 +1,1 @@
-sudo docker build -t telegram_proxy .
+sudo docker build -t entrance_log .

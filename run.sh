@@ -5,6 +5,6 @@ sudo docker run \
     -v $(pwd)/token.txt:/app/token.txt \
     -d \
     -t \
-    --name telegram_proxy \
+    --name entrance_log \
     --restart on-failure \
-    telegram_proxy
+    entrance_log
